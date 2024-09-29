@@ -1,0 +1,189 @@
+.sectionInfo{
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.headerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5% 0 5%;
+}
+
+.headerInfo .textInfo{
+    width: 30%;
+}
+
+.headerInfo p span{
+    font-weight: bold;
+}
+
+.listInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 3%;
+}
+
+.listInfo .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    margin: 15px;
+    border-bottom: 2px solid black;
+}
+
+.listInfo .info h1{
+    font-size: 190%;    
+}
+
+.listInfo .info button{
+    border-radius: 100%;
+    border: none;
+    background-color: black;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.listInfo .info i{
+    font-size: 130%;
+    color: #fff;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info .infoThings{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info .divEnginePerformance .imageEnginePerformance{
+    background: url('assets/BYD-Seal-5.webp') no-repeat center;
+    background-size: cover;
+
+    border-radius: 15px;
+    height: 70vh;
+    margin: 5% 0;
+}
+
+.info .divEnginePerformance .mainInfoEnginePerformance{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
+}
+
+.info .divEnginePerformance .mainInfoEnginePerformance div button{
+    padding: 15px 30px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 30px;
+    font-size: 150%;
+}
+
+.info .divEnginePerformance .mainInfoEnginePerformance .divInfoEngine h1{
+    font-size: 300%;
+}
+
+.divInfoEngine{
+    width: 60%;
+}
+
+.secondInfoEnginePerformance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.textSecondInfoEngine{
+    width: 60%;
+}
+
+.textSecondInfoEngine div .buttonLearnMore{
+    font-size: 140%;
+    padding: 15px;
+    background-color: #EC5605;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.textSecondInfoEngine div .buttonSkip{
+    font-size: 140%;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.textSecondInfoEngine div{
+    margin: 5% 0;
+}
+
+.secondInfoEnginePerformance{
+    margin: 3% 0;
+}
+
+.secondInfoEnginePerformance .engineSpeed{
+    display: flex;
+    font-size: 180%;
+}
+
+.secondInfoEnginePerformance .engineSpeed h3{
+    color: #EC5605;
+}
+
+.secondInfoEnginePerformance .textSecondInfoEngine .enginePGray{
+    color: gray;
+}
+
+
+@media (max-width: 1600px){
+    .mainInfoEnginePerformance .divInfoEngine{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 800px){
+    .mainInfoEnginePerformance .divInfoEngine{
+        display: none;
+    }
+
+    .info .divEnginePerformance .mainInfoEnginePerformance div button{
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .infoThings h2{
+        display: none;
+    }
+
+    .listInfo .info .infoThings h1{
+        font-size: 150%;
+    }
+
+    .textInfo{
+        display: none;
+    }
+
+    .secondInfoEnginePerformance{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondInfoEnginePerformance div{
+        margin: 15px 0;
+    }
+
+    .info .divEnginePerformance .mainInfoEnginePerformance div button{
+        display: none;
+    }
+}

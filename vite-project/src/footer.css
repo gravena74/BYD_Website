@@ -1,0 +1,144 @@
+footer{
+    background-color: #F6F6F6;
+    color: black;
+}
+
+.mainThings{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.mainThings .ulThingsFooter{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainThings .ulThingsFooter h1{
+    padding: 0 0 5% 0;
+}
+
+.mainThings .ulThingsFooter a{
+    padding: 3% 0;
+    cursor: pointer;
+}
+
+.mainThings .ulThingsFooter div{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainThings .newLetter{
+    width: 30%;
+}
+
+.mainThings .newLetter h1{
+    padding: 0 0 5% 0;
+}
+
+.footerThings{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.footerThings .footerTerms{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.footerThings .footerButtons{
+    width: 11%;
+}
+
+.footerThings button{
+    padding: 8%;
+    border-radius: 30px;
+    font-size: 100%;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newLetter div{
+    display: flex;
+    flex-direction: column;
+}
+
+.newLetter div input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    font-size: 100%;
+    padding: 2% 2% 2% 0;
+    margin: 5% 0;
+}
+
+.newLetter div button{
+    width: 20%;
+    font-size: 90%;
+    padding: 2%;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px){
+    .mainThings .ulThingsFooter div{
+        margin: 0 4%;
+    }
+
+    .newLetter p{
+        display: none;
+    }
+
+    .footerThings .footerButtons{
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    }
+
+    .footerThings button{
+        padding: 1%;
+    }
+
+    .newLetter .buttonSubscribe{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .copyWriter{
+        display: none;
+    }
+
+    .footerThings .footerTerms{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px){
+   .newLetter{
+    display: none;
+   }
+
+   .mainThings .ulThingsFooter div{
+    margin: 0 10%;
+}
+}
+
+
+@media (max-width: 500px){
+    .mainThings .ulThingsFooter div h1{
+        font-size: 140%;
+    }
+}
